@@ -13,7 +13,8 @@ oranbusiness@gmail.com
 
 # how to install app
 ### Go to http://64.227.84.118:8888/ 
-### Download the latest `update-demo-win-X.X.X.zip`
+- Download the latest `update-demo-win-X.X.X.zip`
+- Unzip to folder, and run exe, ignore windows permissions stuff.
 
 
 # Development: Install
@@ -26,6 +27,7 @@ oranbusiness@gmail.com
 git clone 
 cd /path/to/repo
 pip install -r requirements.txt
+pyupdater init
 pyupdater settings --plugin scp
 ```
 ### on web accessible server
@@ -37,6 +39,13 @@ sudo docker run -d -p 8888:8080 --name simple -v /root/public:/var/www:ro trinit
 python main.py
 ```
 
+# DONE
+
+
+# Important files to look at
+- main.py - gui program with button `update`
+- update.py - files handle updates using pyupdater
+- client_config.py - location for config of app
 
 ##### Take note of location `/root/public` is where the update files will be accessible 
 
