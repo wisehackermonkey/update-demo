@@ -5,4 +5,4 @@ class ClientConfig(object):
     HTTP_TIMEOUT = 30
     MAX_DOWNLOAD_RETRIES = 3
     UPDATE_URLS = ['http://64.227.84.118:8888/']
-    APP_VERSION="1.1.6"
+    APP_VERSION="1.2.6"
