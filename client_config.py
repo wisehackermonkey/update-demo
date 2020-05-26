@@ -4,4 +4,5 @@ class ClientConfig(object):
     COMPANY_NAME = 'wisehackermonkey'
     HTTP_TIMEOUT = 30
     MAX_DOWNLOAD_RETRIES = 3
-    UPDATE_URLS = ['64.227.84.118']
+    UPDATE_URLS = ['http://64.227.84.118:8888/']
+    APP_VERSION="1.1.6"

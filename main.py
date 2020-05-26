@@ -4,16 +4,22 @@
 # 20200526
 
 import tkinter as tk
-import __init__
+from client_config import ClientConfig
+from update import check_for_update
 window = tk.Tk()
 
 
 
-greeting = tk.Label(text="Demo updating app:")
+greeting = tk.Label(text="Demo updating app: 2")
 greeting.pack()
+greeting2 = tk.Label(text="this allows for autoudates!_1111")
+greeting2.pack()
 
 version_float = tk.StringVar()
-version_float.set(__init__.__version__)
+version_float.set(ClientConfig.APP_VERSION)
 version = tk.Label(window, textvariable=version_float)
 version.pack()
+
+update_button = tk.Button(window, text="Update",command=check_for_update)
+update_button.pack()
 window.mainloop()

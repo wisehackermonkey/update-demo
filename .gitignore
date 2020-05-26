@@ -127,3 +127,4 @@ dmypy.json
 keys/
 keypack.pyu
 .pyupdater
+pyu.log
