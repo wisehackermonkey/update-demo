@@ -22,11 +22,7 @@
 # # if app_update.is_downloaded():
 # #     app_update.extract_restart()
 
-import time
-import argparse
-import os
-import signal
-import sys
+
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
